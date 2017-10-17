@@ -4,7 +4,7 @@ import {
 } from 'ember-qunit';
 
 moduleForComponent('<%= dasherizedModuleName %>', '<%= camelizedModuleName %>', {
-  needs: [ 'component:high-charts' ]
+  needs: ['component:high-charts']
 });
 
 test('it renders', function(assert) {

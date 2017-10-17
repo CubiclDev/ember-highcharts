@@ -18,3 +18,8 @@ testem.log
 gh-pages
 
 .DS_Store
+
+# ember-try files
+/.node_modules.ember-try
+/package.json.ember-try
+/bower.json.ember-try

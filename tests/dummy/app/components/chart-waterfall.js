@@ -1,8 +1,7 @@
 /* global Highcharts */
+import Component from '@ember/component';
 
-import Ember from 'ember';
-
-export default Ember.Component.extend({
+export default Component.extend({
   chartOptions: {
     chart: {
       type: 'waterfall'

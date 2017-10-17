@@ -1,10 +1,11 @@
 /* global Highcharts */
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
 
 const totalData = 100000;
 
-export default Ember.Component.extend({
-  chartData: Ember.computed(function() {
+export default Component.extend({
+  chartData: computed(function() {
     let data = [];
 
     for (let i = 0; i < totalData; i += 1) {

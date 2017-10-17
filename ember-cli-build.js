@@ -1,12 +1,12 @@
 /* eslint-env node */
-/* global require, module */
-var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
-  var app = new EmberAddon(defaults, {
+  let app = new EmberAddon(defaults, {
     emberHighCharts: {
       includeHighCharts: false,
       includeHighStock: true,
+      useStyledMode: false,
       includeHighChartsMore: true,
       includeHighCharts3D: true,
       includeModules: [

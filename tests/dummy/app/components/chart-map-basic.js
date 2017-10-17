@@ -1,7 +1,8 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+
 import mapData from '../data/us-ca-map';
 
-export default Ember.Component.extend({
+export default Component.extend({
   chartOptions: {
     title: {
       text: 'California'
