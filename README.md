@@ -1,8 +1,4 @@
-[![Build Status](https://travis-ci.org/ahmadsoe/ember-highcharts.svg?branch=master)](https://travis-ci.org/ahmadsoe/ember-highcharts)
-[![Ember Observer Score](http://emberobserver.com/badges/ember-highcharts.svg)](http://emberobserver.com/addons/ember-highcharts)
-[![Code Climate](https://codeclimate.com/github/ahmadsoe/ember-highcharts/badges/gpa.svg)](https://codeclimate.com/github/ahmadsoe/ember-highcharts)
-[![npm version](https://badge.fury.io/js/ember-highcharts.svg)](https://badge.fury.io/js/ember-highcharts)
-
+[![Build Status](https://travis-ci.org/mariusrumpf/ember-highcharts.svg?branch=master)](https://travis-ci.org/mariusrumpf/ember-highcharts)
 
 # Ember-highcharts
 
@@ -13,9 +9,7 @@ and [Highmaps](http://www.highcharts.com/products/highmaps) component for [Ember
 ## Requirements
 
 * Ember CLI
-* Ember >= 1.13.0
-* If you need support for Ember < 1.13.0, use ember-highcharts v0.1.3
-
+* Ember >= 2.12.0
 
 ## Installation
 
@@ -255,6 +249,4 @@ The ember-highcharts addon is released under the MIT license.
 
 ## Credit
 
-This add-on is built based on the [gist](https://gist.github.com/poteto/cd2bb47e77bf87c94d33) and
-[medium](https://medium.com/delightful-ui-for-ember-apps/using-highcharts-js-in-an-ember-app-18a65d611644)
-by [@poteto](https://github.com/poteto)
+This add-on is built based on [ahmadsoe/ember-highcharts](https://github.com/ember-highcharts)
