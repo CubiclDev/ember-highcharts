@@ -115,8 +115,13 @@ var app = new EmberApp({
     includeHighCharts3D: true,
     includeModules: ['map', 'broken-axis', 'heatmap', ... ]
     /* available modules:
-      boost, broken-axis, canvas-tools, data, drilldown, exporting, funnel,
-      heatmap, map, no-data-to-display, offline-exporting, solid-gauge, treemap
+      accessibility, annotations, boost-canvas, boost, broken-axis, bullet,
+      canvas-tools, data, drag-panes, drilldown, export-data, exporting, funnel,
+      gantt, grid-axis, heatmap, histogram-bellcurve, item-series, map,
+      no-data-to-display, offline-exporting, oldie, overlapping-datalabels,
+      parallel-coordinates, parento, sankey, series-label, solid-gauge, static-scale,
+      stock, streamgraph, sunburst, tilemap, treemap, variable-pie, variwide, vector,
+      windbarb, wordcloud, xrange-series, xrange
     */
   }
 });
