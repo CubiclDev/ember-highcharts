@@ -14,7 +14,7 @@ and [Highmaps](http://www.highcharts.com/products/highmaps) component for [Ember
 ## Installation
 
 ```
-ember install ember-highcharts
+npm install @cubicl/ember-highcharts
 ```
 
 
