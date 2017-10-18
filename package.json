@@ -1,5 +1,5 @@
 {
-  "name": "ember-highcharts",
+  "name": "cubicl/ember-highcharts",
   "version": "1.0.0",
   "description": "A Highcharts, HighStock and HighMaps component for ember-cli",
   "keywords": [
@@ -14,7 +14,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/mariusrumpf/ember-highcharts.git",
+  "repository": "https://github.com/CubiclDev/ember-highcharts.git",
   "scripts": {
     "build": "ember build",
     "start": "ember server",

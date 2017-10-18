@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/MariusRumpf/ember-highcharts.svg?branch=master)](https://travis-ci.org/MariusRumpf/ember-highcharts)
+[![Build Status](https://travis-ci.org/CubiclDev/ember-highcharts.svg?branch=master)](https://travis-ci.org/CubiclDev/ember-highcharts)
 
 # Ember-highcharts
 
