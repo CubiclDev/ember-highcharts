@@ -6,25 +6,29 @@ import stockData from '../data/stock';
 export default Component.extend({
   dynamicChart: inject('dynamic-chart'),
 
-  chartOptions: {
-    rangeSelector: {
-      selected: 1
-    },
-    title: {
-      text: 'Highstock: AAPL Stock Price'
-    }
-  },
+  init() {
+    this._super(...arguments);
 
-  chartData: copy(stockData, true),
+    this.chartOptions = {
+      rangeSelector: {
+        selected: 1
+      },
+      title: {
+        text: 'Highstock: AAPL Stock Price'
+      }
+    };
+
+    this.chartData = copy(stockData, true);
+  },
 
   actions: {
     updateSeriesData() {
-      let newChartData = this.get('dynamicChart').updateSeriesData(stockData, 100, 514);
+      const newChartData = this.get('dynamicChart').updateSeriesData(stockData, 100, 514);
       this.set('chartData', newChartData);
     },
 
     setSeriesCount(numSeries) {
-      let newChartData = this.get('dynamicChart').updateSeriesCount(stockData, numSeries);
+      const newChartData = this.get('dynamicChart').updateSeriesCount(stockData, numSeries);
       this.set('chartData', newChartData);
     }
   }

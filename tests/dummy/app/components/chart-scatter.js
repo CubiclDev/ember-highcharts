@@ -5,8 +5,36 @@ import { computed } from '@ember/object';
 const totalData = 100000;
 
 export default Component.extend({
-  chartData: computed(function() {
-    let data = [];
+  init() {
+    this._super(...arguments);
+
+    this.chartOptions = {
+      chart: {
+        zoomType: 'xy'
+      },
+      xAxis: {
+        min: 0,
+        max: 100,
+        gridLineWidth: 1
+      },
+      yAxis: {
+        // Renders faster when we don't have to compute min and max
+        min: 0,
+        max: 100,
+        minPadding: 0,
+        maxPadding: 0
+      },
+      title: {
+        text: `Scatter chart with ${Highcharts.numberFormat(totalData, 0, ' ')} points`
+      },
+      legend: {
+        enabled: false
+      }
+    };
+  },
+
+  chartData: computed(() => {
+    const data = [];
 
     for (let i = 0; i < totalData; i += 1) {
       data.push([
@@ -28,28 +56,4 @@ export default Component.extend({
       }
     }];
   }),
-
-  chartOptions: {
-    chart: {
-      zoomType: 'xy'
-    },
-    xAxis: {
-      min: 0,
-      max: 100,
-      gridLineWidth: 1
-    },
-    yAxis: {
-      // Renders faster when we don't have to compute min and max
-      min: 0,
-      max: 100,
-      minPadding: 0,
-      maxPadding: 0
-    },
-    title: {
-      text: `Scatter chart with ${Highcharts.numberFormat(totalData, 0, ' ')} points`
-    },
-    legend: {
-      enabled: false
-    }
-  }
 });
